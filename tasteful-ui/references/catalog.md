@@ -1,18 +1,34 @@
 # Design Reference Catalog
 
-Use this catalog to choose the smallest useful design reference set before reading detailed design references.
+Use this catalog after project context and taste exploration.
+This file routes references; it does not decide taste by itself.
 
-## Routing workflow
+## Routing Workflow
 
-1. Understand the UI task and read the real project context first.
-2. Use the category descriptions below to shortlist the closest visual families.
-3. Open only 1 to 3 detailed design reference files unless the task truly needs broader comparison.
-4. Extract transferable visual language and adapt it to the product instead of copying brand specifics literally.
+1. Read the real project context first.
+2. Write a taste readout using `taste/taste_exploration.md`.
+3. Decide what the UI needs more of: trust, clarity, density, warmth, precision, restraint, expressiveness, conversion, or operational speed.
+4. Use the category descriptions below to shortlist 1 to 3 visual families.
+5. Attach candidate references to taste directions. Do not make the reference brand the user's main choice.
+6. Before opening detailed references, state why each candidate may help and how it may hurt.
+7. Open only references supporting the confirmed taste direction.
+7. Extract transferable visual language and adapt it to the product instead of copying brand specifics literally.
+
+## Reference Risk Rules
+
+- Do not route to dark precision just because the task is a dashboard.
+- Do not route to automotive references just because the product domain mentions cars.
+- Do not route to warm editorial just because the product needs trust.
+- Do not route to creative tools just because the user asks for "more designed".
+- If the existing UI already has the right product tone, prefer references that refine craft rather than replace identity.
+- Always include a "stay closer to existing product style" route when the current UI has a strong product cue.
 
 ## Quick routing
 
-- Warm editorial AI UI: start with `references/designs/ai_llm_platforms/claude.md`, then compare with `references/designs/productivity _ saas/notion.md` if you need more product utility.
-- Dark precision SaaS dashboard: start with `references/designs/productivity _ saas/linear.md`, then compare with `references/designs/developer tools _ ides/vercel.md` or `references/designs/backend, database _ devops/sentry.md`.
+- Calm archive/search tool: start with `references/designs/productivity _ saas/notion.md` or `references/designs/productivity _ saas/mintlify.md`; preserve the existing product identity if it is already credible.
+- Data decision dashboard: compare light analytical workspace, structured data organization, and dark precision before choosing. Consider `airtable.md`, `sentry.md`, `posthog.md`, `linear.md`, or `stripe.md` based on readability needs.
+- Warm editorial AI UI: start with `references/designs/ai_llm_platforms/claude.md`, then compare with `references/designs/productivity _ saas/notion.md` if product utility matters more than atmosphere.
+- Dark precision workspace: use `references/designs/productivity _ saas/linear.md` only when dark mode improves focus and data readability; compare with `vercel.md` or `sentry.md`.
 - Bright creative tool marketing page: start with `references/designs/design _ creative tools/figma.md`, `framer.md`, or `webflow.md`.
 - Enterprise documentation or devtools surface: start with `references/designs/backend, database _ devops/hashicorp.md`, `clickhouse.md`, `mongodb.md`, or `references/designs/productivity _ saas/mintlify.md`.
 

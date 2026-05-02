@@ -36,3 +36,6 @@ coverage/
 .cache/
 tmp/
 temp/
+
+# debug documents
+Ver2.md
